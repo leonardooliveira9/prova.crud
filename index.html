@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Estacionamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Estacionamento</h1>
+
+    <form id="form-registro" class="form">
+      <input type="text" id="placa" placeholder="Placa" required maxlength="10" />
+      <input type="text" id="modelo" placeholder="Modelo (opcional)" maxlength="30" />
+      <button type="submit">Registrar Entrada</button>
+    </form>
+
+    <h2>Registros</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Placa</th>
+          <th>Modelo</th>
+          <th>Entrada</th>
+          <th>Saída</th>
+          <th>Valor Pago</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-registros"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
